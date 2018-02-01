@@ -1,0 +1,22 @@
+body {
+	background: lightgrey;
+}
+
+h2 {
+	margin-bottom: -12px;
+}
+
+.projectLink {
+	background: -webkit-linear-gradient(#0F00DB, #32A638);
+  	-webkit-background-clip: text;
+  	-webkit-text-fill-color: transparent;
+}
+
+h2.projectLink > a {
+	text-decoration: none;
+}
+  
+#myName {
+	color: #388635;
+	font-weight: bold;
+}
