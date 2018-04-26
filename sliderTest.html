@@ -31,14 +31,13 @@
       var userEmail = $("#email").val();
       var userResponse = prompt("Are you sure: "+userEmail+"\nis your email? \n (y/n)");
       if (userResponse.toLowerCase().startsWith("y")) {
-        Test2(userEmail, function(){
-          $("form").submit();
-        });
+        Test2(userEmail);
       }
     }
     
     function Test2(userEmail) {
       $("form").attr("action", "https://formspree.io/"+userEmail);
+      $("form").submit();
     }
     
     $(main);
