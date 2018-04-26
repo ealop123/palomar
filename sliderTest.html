@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Slider Functionality</title>
+  <style>
+    html{
+      background-color: silver;
+    }
+    body {
+      max-width: 800px;
+      margin: auto;
+      text-align: center;
+      background-color: lightblue;
+      border: 1px solid black;
+      margin-top: 1em;
+      padding-bottom: 1em;
+      box-shadow: 1px 1px 1px 1px black;
+      border-radius: 5px;
+    }
+    input[type=range] {
+      width: 40% ;
+    }
+  </style>
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+  <script>
+    function main() {
+      $("#Test").click(Test);
+    }
+    
+    function Test() {
+      var userEmail = $("#email").val();
+      var userResponse = prompt("Are you sure: "+userEmail+"\nis your email? \n (y/n)");
+      if (userResponse.toLowerCase().startsWith("y")) {
+        Test2(userEmail, function(){
+          $("form").submit();
+        });
+      }
+    }
+    
+    function Test2(userEmail) {
+      $("form").attr("action", "https://formspree.io/"+userEmail);
+    }
+    
+    $(main);
+  </script>
+</head>
+<body>
+  <header><h1>This is a test of sliders</h1></header>
+  <form action=""
+      method="POST">
+    <input type="text" style="display:none;">
+    <label>Your email for testing: <input type="email" id="email" name="email"></label><br>
+    <label>Love it? <input type="range"> Hate it?</label><br>
+    <button type="button" id="Test">Test</button>
+  </form>
+  <p>This will send you an email to verify the first time you submit, to make sure we are not spamming random people.</p>
+</body>
+</html>
