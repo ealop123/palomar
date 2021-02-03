@@ -14,5 +14,18 @@
 </div>
 	
 	<img src="classSchedule.png" style="width: 90%; margin:auto;" alt="Something is Broken">
+	<script>
+		const main = function () {
+			setUpCopyEmail();
+		}
+		function setUpCopyEmail() {
+			document.getElementById("myEmail").addEventListener("click",
+			    function() {
+				this.select();
+				document.execCommand("copy");
+			    });
+		}
+									    
+	</script>
 </body>
 </html>
