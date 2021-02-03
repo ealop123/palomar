@@ -25,12 +25,12 @@ h2.projectLink > a {
 	font-weight: bold;
 }
 
-#myEmail {
+label {
 	font-size: 2em;
 	font-weight: bold;
 }
 
-#myEmail input {
+#myEmail {
 	margin-left: 0.5em;
 	font-size: 1em;
 }
