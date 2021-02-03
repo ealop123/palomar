@@ -2,6 +2,10 @@ body {
 	background: lightgrey;
 }
 
+div {
+	margin-bottom: 1.5em;
+}
+
 h2 {
 	margin-bottom: -12px;
 }
@@ -20,3 +24,14 @@ h2.projectLink > a {
 	color: #388635;
 	font-weight: bold;
 }
+
+#myEmail {
+	font-size: 2em;
+	font-weight: bold;
+}
+
+#myEmail input {
+	margin-left: 0.5em;
+	font-size: 1em;
+}
+	
