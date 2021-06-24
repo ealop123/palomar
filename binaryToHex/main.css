@@ -1,0 +1,50 @@
+body {
+  margin: 0;
+  background-color: lightblue;
+  height: 100vh;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+}
+
+#binaryInput {
+  width: 99%;
+  font-size: 2em;
+  text-align: center;
+  font-family:  monospace;
+}
+
+#cardField {
+  width: 100vw;
+  overflow: auto;
+  display: flex;
+  justify-content: space-around;
+}
+
+.BinaryCard {
+  font-size: 1.7em;
+  padding: 0 0.5em;
+}
+
+.BinaryCard > .binaryField:hover {
+    cursor: pointer;
+    background-color: black;
+    color: white;
+}
+
+.BinaryCard > .binaryField {
+  user-select: none;
+}
+
+#hexByGroup {
+  display: flex;
+  justify-content: space-around;
+  font-size:1.5em;
+}
+
+#hexidecimalVal {
+  text-align: center;
+  background-color: white;
+  font-size: 2em;
+}
